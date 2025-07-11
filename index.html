@@ -2,9 +2,11 @@
 <html lang="pl">
 <head>
   <meta charset="UTF-8">
-  <title> Dla Niej</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dla Niej</title>
   <style>
     body {
+      font-size: 22px;
       background-color: #1e1e1e;
       color: white;
       text-align: center;
@@ -43,29 +45,64 @@
     .content {
       position: relative;
       z-index: 1;
+      padding: 0 20px;
     }
 
- img {
-  width: 70vw;
-  max-width: 400px; 
-  height: auto;
-  border-radius: 16px;
-  box-shadow: 0 0 20px #ff5e99;
-  margin: 0 auto;
-  display: block;
-}
-
+    img {
+      width: 80vw;
+      max-width: 420px;
+      height: auto;
+      border-radius: 16px;
+      box-shadow: 0 0 20px #ff5e99;
+      margin: 20px auto;
+      display: block;
+    }
 
     h1 {
       margin-bottom: 30px;
       color: #ff5e99;
+      font-size: 9vw;
+    }
+
+    .insta-button {
+      display: inline-block;
+      padding: 16px 28px;
+      background-color: #e1306c;
+      color: white;
+      text-decoration: none;
+      border-radius: 12px;
+      font-size: 24px;
+      font-weight: bold;
+      box-shadow: 0 0 15px #e1306c;
+      margin-top: 20px;
+    }
+
+    p {
+      margin-top: 24px;
+      font-size: 22px;
+      line-height: 1.4em;
+    }
+
+    @media only screen and (max-width: 500px) {
+      body {
+        font-size: 24px;
+      }
+
+      .insta-button {
+        font-size: 26px;
+        padding: 18px 32px;
+      }
+
+      h1 {
+        font-size: 11vw;
+      }
     }
   </style>
 </head>
 <body>
   <div class="background-hearts">
-    <!-- dużo emoji -->
-    <span>💖</span><span>💖</span><span>💖</span><span>💖</span><span>💖</span><span>💖</span>
+    <!-- 💖 emoji... (zostawiłem tak jak było) -->
+    <span>💖</span><span>💖</span><span>💖 <span>💖</span><span>💖</span><span>💖</span><span>💖</span><span>💖</span><span>💖</span>
     <span>💖</span><span>💖</span><span>💖</span><span>💖</span><span>💖</span><span>💖</span>
     <span>💖</span><span>💖</span><span>💖</span><span>💖</span><span>💖</span><span>💖</span>
     <span>💖</span><span>💖</span><span>💖</span><span>💖</span><span>💖</span><span>💖</span>
@@ -111,28 +148,15 @@
     <span>💖</span><span>💖</span><span>💖</span><span>💖</span><span>💖</span><span>💖</span>
     <span>💖</span><span>💖</span><span>💖</span><span>💖</span><span>💖</span><span>💖</span>
     <span>💖</span><span>💖</span><span>💖</span><span>💖</span><span>💖</span><span>💖</span>
-    <span>💖</span><span>💖</span><span>💖</span><span>💖</span><span>💖</span><span>💖</span>
+    <span>💖</span><span>💖</span><span>💖</span><span>💖</span><span>💖</span><span>💖
   </div>
 
   <div class="content">
     <h1>😍 No Cześć 😍</h1>
     <img src="czescmala.jpg" alt="jpg">
-<p style="margin-top: 20px;"> Witam cię malutki😎, jeżeli tak bardzo ci sie podobam to zapraszam na mojego instagrama😱 </p>
-<a href="https://www.instagram.com/_pernak/" target="_blank" style="
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #e1306c;
-  color: white;
-  text-decoration: none;
-  border-radius: 8px;
-  font-weight: bold;
-  box-shadow: 0 0 10px #e1306c;
-">Instagram</a>
-
-
-
-<p style="margin-top: 20px;">
-<img src="elomelo.gif" alt="GIF">
+    <p>Witam cię malutki 😎, jeżeli tak bardzo ci się podobam to zapraszam na mojego Instagrama 😱</p>
+    <a class="insta-button" href="https://www.instagram.com/_pernak/" target="_blank">Instagram</a>
+    <img src="elomelo.gif" alt="GIF">
   </div>
 </body>
 </html>
